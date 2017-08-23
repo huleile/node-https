@@ -12,7 +12,7 @@ var path = require('path');
 
 var fs = require('fs');
 const option = {
-  key: fs.readFileSync(`${path.dirname(__dirname)}/privatekey.pem`;, 'utf8'),
+  key: fs.readFileSync(`${path.dirname(__dirname)}/privatekey.pem`, 'utf8'),
   cert: fs.readFileSync(`${path.dirname(__dirname)}/hully.crt`, 'utf8')
 };
 /**
